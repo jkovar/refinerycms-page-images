@@ -1,3 +1,4 @@
+#encoding: utf-8
 module Refinery
   module PageImages
     class Engine < Rails::Engine
@@ -8,7 +9,7 @@ module Refinery
       engine_name :refinery_page_images
 
       def self.register(tab)
-        tab.name = "images"
+        tab.name = "obrázky"
         tab.partial = "/refinery/admin/pages/tabs/images"
       end
 
